@@ -1,5 +1,6 @@
 # Fine-EQA
 Embodied Question Answering (EQA) benchmark and method
+
 **Multimodal Embodied Interaction in Unknown Environments: A Benchmark and Method**        
 For more details, please refer to our paper [Multimodal Embodied Interaction in Unknown Environments: A Benchmark and Method](https://arxiv.org/pdf/2402.00290)       
 
