@@ -1,4 +1,4 @@
-# Beyond the Destination: A Novel Benchmark for Exploration-Aware Embodied Question Answering
+# Beyond the Destination: A Novel Benchmark for Exploration-Aware Embodied Question Answering [pdf](https://arxiv.org/pdf/2503.11117)      
 A Large-scale Embodied Question Answering (EQA) benchmark and method
 
 ### Abstract
@@ -46,7 +46,8 @@ If you use this code for your research, please cite our paper.
   title={Beyond the Destination: A Novel Benchmark for Exploration-Aware Embodied Question Answering},
   author={Jiang, Kaixuan and Liu, Yang and Chen, Weixing and Luo, Jingzhou and Chen, Ziliang and Pan, Ling and Li, Guanbin and Lin, Liang},
   year={2025}
+  journal={arXiv preprint arXiv:2503.11117}
 }
 
 ``` 
-If you have any question about this code, feel free to reach (liuy856@mail.sysu.edu.cn). 
+If you have any question about this code, feel free to reach (jiangkx3@mail2.sysu.edu.cn or liuy856@mail.sysu.edu.cn). 
