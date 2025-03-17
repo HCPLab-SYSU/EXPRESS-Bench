@@ -1,4 +1,4 @@
-# Beyond the Destination: A Novel Benchmark for Exploration-Aware Embodied Question Answering [pdf](https://arxiv.org/pdf/2503.11117)      
+# [Beyond the Destination: A Novel Benchmark for Exploration-Aware Embodied Question Answering](https://arxiv.org/pdf/2503.11117)      
 A Large-scale Embodied Question Answering (EQA) benchmark and method
 
 ### Abstract
