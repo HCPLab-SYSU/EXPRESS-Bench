@@ -14,7 +14,7 @@ conda install habitat-sim headless -c conda-forge -c aihabitat
 
 ### EXPRESS-Bench
 
-EXPRESS-Bench comprises 777 exploration trajectories and 2,044 question-trajectory pairs. The corresponding question-answer pairs are stored in [express-bench.json](https://github.com/kxxxxxxxxxx/EXPRESS-Bench/tree/main/data/express-bench.json), while the full set of episodes for EXPRESS-Bench can be accessed [here](https://drive.google.com/file/d/1_FyeWi62d7NcB2VtBQPwkHSpsiWAQaL3/view?usp=sharing).  
+EXPRESS-Bench comprises 777 exploration trajectories and 2,044 question-trajectory pairs. The corresponding question-answer pairs are stored in [express-bench.json](https://github.com/kxxxxxxxxxx/EXPRESS-Bench/tree/main/data/express-bench.json), while the full set of episodes for EXPRESS-Bench can be accessed from [Google Drive](https://drive.google.com/file/d/1_FyeWi62d7NcB2VtBQPwkHSpsiWAQaL3/view?usp=sharing) and [Baidu](https://pan.baidu.com/s/1s_q_QedXMFQzgvY4Ty6Unw?pwd=mj3f). 
 
 To obtain the train and val splits of the HM3D dataset, please download them [here](https://github.com/matterport/habitat-matterport-3dresearch). Note that semantic annotations are required, and access must be requested in advance.
 
