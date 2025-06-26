@@ -42,12 +42,11 @@ We will release it as soon as possible!
 ### Citation
 If you use this code for your research, please cite our paper.      
 ```
-@article{EXPRESSBench,
-  title={Beyond the Destination: A Novel Benchmark for Exploration-Aware Embodied Question Answering},
-  author={Jiang, Kaixuan and Liu, Yang and Chen, Weixing and Luo, Jingzhou and Chen, Ziliang and Pan, Ling and Li, Guanbin and Lin, Liang},
-  year={2025}
-  journal={arXiv preprint arXiv:2503.11117}
+@inproceedings{EXPRESSBench,
+title={Beyond the Destination: A Novel Benchmark for Exploration-Aware Embodied Question Answering},
+author={Jiang, Kaixuan and Liu, Yang and Chen, Weixing and Luo, Jingzhou and Chen, Ziliang and Pan, Ling and Li, Guanbin and Lin, Liang},
+year={2025}
+booktitle={IEEE/CVF International Conference on Computer Vision (ICCV)}
 }
-
 ``` 
 If you have any question about this code, feel free to reach (jiangkx3@mail2.sysu.edu.cn or liuy856@mail.sysu.edu.cn). 
