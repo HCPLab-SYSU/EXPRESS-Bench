@@ -6,10 +6,24 @@ Embodied Question Answering (EQA) is a challenging task in embodied intelligence
 
 ### Installation
 
+Set up the conda environment (Linux, Python 3.9):
+```
+conda env create -f environment.yml
+conda activate fine-eqa
+pip install -e .
+```
+
 Install the latest version of [Habitat-Sim](https://github.com/facebookresearch/habitat-sim) on headless machines:
 
 ```
 conda install habitat-sim headless -c conda-forge -c aihabitat
+```
+
+Install [Prismatic VLM](https://github.com/TRI-ML/prismatic-vlms):
+```
+git https://github.com/TRI-ML/prismatic-vlms.git
+cd prismatic-vlms
+pip install -e .
 ```
 
 ### EXPRESS-Bench
@@ -35,9 +49,16 @@ Afterward, your [data](https://github.com/kxxxxxxxxxx/EXPRESS-Bench/tree/main/da
 	|→ express-bench.json
 ```
 
-### Fine-EQA model
+### Fine-EQA
 
-We will release it as soon as possible!
+To run the Fine-EQA model, you can use the following command:
+
+```
+python main.py -cf fine_eqa.yaml
+```
+
+### Acknowledgement
+This project is built upon the [explore-eqa](https://github.com/Stanford-ILIAD/explore-eqa). We sincerely thank the authors for their excellent work and open-source contribution, which served as a solid foundation for our development.
 
 ### Citation
 If you use this code for your research, please cite our paper.      
@@ -47,6 +68,5 @@ If you use this code for your research, please cite our paper.
   author={Jiang, Kaixuan and Liu, Yang and Chen, Weixing and Luo, Jingzhou and Chen, Ziliang and Pan, Ling and Li, Guanbin and Lin, Liang},
   year={2025}
 }
-
 ``` 
 If you have any question about this code, feel free to reach (liuy856@mail.sysu.edu.cn). 
