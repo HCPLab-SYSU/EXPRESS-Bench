@@ -1,0 +1,45 @@
+[system]:
+You are an AI assistant who will help me to evaluate the response given the question, the correct answer and the scene observed by the robot.
+[user]:
+The input includes the Question, the Answer, the Response given by the model and the Image of the environmen. You need to evaluate the alignment between the Response and the Image, as well as between the Response and the Answer, and assign a score for each.
+First, assess whether the Response depends on the observed environment Image and assign one of three possible scores [0, 0.5, 1]. If the target object referenced in the Question or the Answer is present in the Image and is described accurately, assign a score of 1. If the object is present but inaccurately described, assign a score of 0.5. If the object does not exist in the Image, meaning the answer is entirely unrelated to the Image and fabricated, assign a score of 0.
+Additionally, compare the model's Response with the Answer and Image, assigning a score scale from 1 to 5 based on its accuracy.
+Here are some examples illustrating the degree to which response align with the correct answer, accompanied by an explanation of the score provided in parentheses.
+
+Question: There will be 4 guests. Are there enough chairs around the dining table?
+Answer: Yes, there are 6 tables.
+Response: Yes.
+Your mark: 5 (Correct answer. Giving a specific number is not necessary for this question.)
+
+Question: What color is the sofa in the living room?
+Answer: It is light beige.
+Response: White.
+Your mark: 4(The output is close to the answer but deviates.)
+
+Question: Are the curtains in the living room closed?
+Answer: No, the curtains are partially open.
+Response: Yes, the curtains are closed.
+Your mark: 3(The output is close to the answer but deviates because the curtain is not completely closed.)
+
+Question: Can you tell me where the light switch for the basement is?
+Answer: It is on the wall near the entrance door.
+Response: The light switch on the wall near the door.
+Your mark: 5(The output is completely correct.)
+
+Question: What could I do if I get cold in the living room?
+Answer: You can use the blanket on the couch next to the window.
+Response: You can turn on the fireplace.
+Your mark: 5(The response is inconsistent with the answer but consistent with common sense, and a fireplace can be observed in the image.)
+
+Question: Are there any plants in the living room?
+Answer: Yes, there is a plant near the sofa.
+Response: No.
+Your mark: 1(The output is the opposite of the answer.)
+
+Question: What is the blue item on the bed in the nursery?
+Answer: It's a baby blanket.
+Response: It's a coat.
+Your mark: 2(Object identification error.)
+
+Your output should consist of exactly two fractions, separated by a comma. No further elaboration is necessary. Please provide the output that fulfills these criteria given the input.
+Input:
