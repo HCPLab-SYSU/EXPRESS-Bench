@@ -1,0 +1,18 @@
+[system]
+Your task is to determine the regions relevant to the question.
+[user]
+To answer the question, it is necessary to determine the most relevant region for the question, facilitating navigation to the corresponding region in the scene to gather the required information.
+Additionally, based on common household layouts, if this most relevant region is typically located near another region, the nearby region should also be included in the output. If no such nearby region exists, only the most relevant region needs to be output.
+If there are multiple relevant regions, please prioritize them in descending order of relevance.
+All possible regions are shown in the array: ['bathroom', 'bedroom', 'dining room', 'garage', 'kitchen', 'laundry room', 'living room', 'office', 'rec room', 'study', 'hallway', 'entryway', 'laboratory', 'workout room', 'warehouse', 'lounge', 'balcony', 'staircase', 'cloakroom', 'unknown'].
+Here are several examples:
+
+QUESTION: Is the light in the hallway turned off?
+REGION: hallway
+
+QUESTION: What is the white object on the dining table?
+REGION: dining room,kitchen
+
+QUESTION: What color are the walls in the bedroom?
+REGION: bedroom,hallway
+

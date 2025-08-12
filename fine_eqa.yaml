@@ -1,0 +1,65 @@
+seed: 42
+dataset_path: ./data/express-bench.json
+scene_data_path: ./data
+output_dir: ./experiment_result
+
+# Sensor
+rgb_sensor: True
+depth_sensor: True
+semantic_sensor: True
+
+save_obs: true
+save_freq: 5
+
+# Question answering
+vlm:
+  hf_token:
+  device: cuda:0
+  model_id: prism-dinosiglip+7b
+
+# Camera, image
+camera_height: 1.5
+camera_tilt_deg: 0
+img_width: 512
+img_height: 512
+hfov: 90
+tsdf_grid_size: 0.1
+margin_w_ratio: 0.25
+margin_h_ratio: 0.6
+
+# Navigation
+init_clearance: 0.5
+max_step_room_size_ratio: 3
+black_pixel_ratio: 0.5
+min_random_init_steps: 2
+
+# Semantic map
+gsv_T: 0.5
+gsv_F: 3
+planner:
+  dist_T: 10
+  unexplored_T: 0.2
+  unoccupied_T: 2.0
+  val_T: 0.5
+  val_dir_T: 0.5
+  max_val_check_frontier: 3
+  smooth_sigma: 5
+  eps: 1
+  min_dist_from_cur: 0.5
+  max_dist_from_cur: 3
+  frontier_spacing: 1.5
+  frontier_min_neighbors: 3
+  frontier_max_neighbors: 4
+  max_unexplored_check_frontier: 3
+  max_unoccupied_check_frontier: 1
+
+visual_prompt:
+  cluster_threshold: 1.0
+  num_prompt_points: 3
+  num_max_unoccupied: 300
+  min_points_for_clustering: 3
+  point_min_dist: 2
+  point_max_dist: 10
+  cam_offset: 0.6
+  min_num_prompt_points: 2
+  circle_radius: 18
